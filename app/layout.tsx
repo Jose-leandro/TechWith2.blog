@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// app/layout.tsx or pages/_app.tsx
+import { EB_Garamond } from "next/font/google";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const ebGaramond = EB_Garamond({
   subsets: ["latin"],
+  weight: ["400", "700", "800"], // Choose the weights you need
+  variable: "--font-eb-garamond",
 });
 
 export const metadata: Metadata = {
