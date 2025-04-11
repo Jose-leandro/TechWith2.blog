@@ -26,20 +26,28 @@ export default function Home() {
         <Divider orientacion="horizontal" />
 
         <section className="text-center my-10">
-          <h1 className="text-4xl font-bold max-w-4xl mx-auto">
+          <h1 className="text-8xl font-bold w-full font-garamond">
             Welcome to TechWith2: Your Hub for Technology, Programming, and All
             Things Tech
           </h1>
         </section>
 
-        <section className="flex flex-col md:flex-row gap-6 my-10 items-start">
+        <section className="flex flex-col md:flex-row gap-6 my-10 items-center">
           <Divider orientacion="vertical" />
-          <article className="text-lg max-w-3xl">
+          <article className="text-lg">
             <h2 className="text-2xl font-semibold mb-2">About TechWith2</h2>
             <p>
-              TechWith2 is a blog focused on tutorials, insights, and trends in
-              programming and software development. Perfect for developers and
-              tech enthusiasts looking to stay ahead.
+              <span className="font-bold">TechWith2</span> is a
+              technology-focused blog dedicated to sharing valuable insights,
+              tutorials, and news about{" "}
+              <span className="font-bold">
+                programming, software development, and the latest trends in the
+                tech industry.
+              </span>{" "}
+              Whether you’re a developer looking to enhance your skills or a
+              tech enthusiast eager to stay updated, TechWith2 offers practical
+              guides, coding tips, and deep dives into emerging technologies to
+              help you stay ahead in the digital world.
             </p>
           </article>
         </section>

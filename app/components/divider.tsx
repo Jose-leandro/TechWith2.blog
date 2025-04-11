@@ -8,7 +8,7 @@ export default function Divider(
   return (
     <div
       className={`bg-black ${
-        orientacion === "vertical" ? "h-[1px]" : "h-[1px]"
+        orientacion === "vertical" ? "w-[1px] h-[100px] " : "h-[1px] w-auto"
       } `}
     ></div>
   );
