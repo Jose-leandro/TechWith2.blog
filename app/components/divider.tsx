@@ -1,15 +1,29 @@
 import React from "react";
 
-export default function Divider(
-  orientacion: string,
-  width: number,
-  height: number
-) {
+type DividerProps = {
+  orientacion: string;
+  width: string;
+  height: string;
+};
+
+export default function Divider({ orientacion, width, height }: DividerProps): JSX.Element {
+  const widthClass = {
+    "1px": "w-[1px]",
+    "full": "w-full",
+    "1/2": "w-1/2",
+  }[width] || "";
+
+  const heightClass = {
+    "1px": "h-[1px]",
+    "full": "h-full",
+    "24": "h-24",
+  }[height] || "";
+
   return (
     <div
       className={`bg-black ${
-        orientacion === "vertical" ? "w-[1px] h-[100px] " : "h-[1px] w-auto"
-      } `}
+        orientacion === "vertical" ? `${widthClass} ${heightClass}` : `${heightClass} ${widthClass}`
+      }`}
     ></div>
   );
 }

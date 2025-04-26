@@ -1,19 +1,23 @@
-// components/FooterSection.tsx
 import Link from "next/link";
+
+type FooterItem = {
+  title: string;
+  link: string;
+};
 
 type Props = {
   title: string;
-  items: string[];
+  dateFooter?: FooterItem[]; // you don't need the `items?: string`
 };
 
-export default function FooterSection({ title, items }: Props) {
+export default function FooterSection({ title, dateFooter = [] }: Props) {
   return (
     <div>
       <h4 className="font-semibold mb-2">{title}</h4>
       <ul>
-        {items.map((item, i) => (
+        {dateFooter.map((item, i) => (
           <li key={i}>
-            <Link href="#">{item}</Link>
+            <Link href={item.link}>{item.title}</Link>
           </li>
         ))}
       </ul>

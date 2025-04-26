@@ -14,6 +14,7 @@ export default {
       },
       fontFamily: {
         garamond: ['"EB Garamond"', "serif"],
+        ibmplex: ['"IBM Plex Serif"', 'serif'],
       },
     },
   },
