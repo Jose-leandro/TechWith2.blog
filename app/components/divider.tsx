@@ -6,7 +6,7 @@ type DividerProps = {
   height: string;
 };
 
-export default function Divider({ orientacion, width, height }: DividerProps): JSX.Element {
+export default function Divider({ orientacion, width, height }: DividerProps) {
   const widthClass = {
     "1px": "w-[1px]",
     "full": "w-full",
