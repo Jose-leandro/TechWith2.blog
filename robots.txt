@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Disallow:
+
+# Host
+Host: https://tech-with2-blog.vercel.app/
+
+# Sitemaps
+Sitemap: https://tech-with2-blog.vercel.app/sitemap.xml
